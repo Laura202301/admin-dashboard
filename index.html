@@ -10,6 +10,7 @@
   <div class="container">
 
     <div class="header">
+      
       <div class="search">
         <form id="search-bar">
           <div id="search-button">
@@ -20,15 +21,15 @@
       </div>
 
       <div class="user-info">
-        <div id="notification">
+        <div class="notification">
           <img src="icons/notification.svg" id="notification-icon">
-          <img class= "profile-pic" src="./images/morgan.jpg" alt="Profile picture">
-          <div class= Name>Morgan Oakley</div>
         </div>
-      </div>
-
-      <div class="welcome-message">
         <img class= "profile-pic" src="./images/morgan.jpg" alt="Profile picture">
+        <div class= "user-name">Morgan Oakley</div>
+      </div>
+    
+      <div class="welcome-message">
+        <img class= "big-profile-pic" src="./images/morgan.jpg" alt="Profile picture">
         <div class="message">
           <p class="salutation">Hi there,</p>
           <p class="user-name">Morgan Oakley (@morgan)</p>
@@ -40,6 +41,7 @@
         <button class="option-button">Upload</button>
         <button class="option-button">Share</button>
       </div>
+
     </div>
 
     <div class="sidebar">
@@ -80,10 +82,9 @@
           <div class="project-tittle">Super Cool Project</div>
           <div class="project-description">Diam phasellus urna quam dignissim ridiculus lacinia cras ornare lacus, justo varius elementum eleifend curae natoque hac dapibus rutrum, posuere suscipit aptent consequat senectus nullam porta cursus.</div>
           <div class="project-icons">
-            <ul>
-              <li><img class="project-icon" src="icons/favorite.svg"></li>
-              <li><img class="project-icon" src="icons/look.svg"></li>
-              <li><img class="project-icon" src="icons/branch.svg"></li>
+            <img class="project-icon" src="icons/favorite.svg">
+            <img class="project-icon" src="icons/look.svg">
+            <img class="project-icon" src="icons/branch.svg">
           </div>
         </div>
 
@@ -91,10 +92,9 @@
           <div class="project-tittle">Less Cool Project</div>
           <div class="project-description">Sodales nulla conubia porttitor laoreet nibh tempor odio nisl, ornare magnis vehicula curae rhoncus in ultrices platea integer, imperdiet morbi sapien suspendisse netus erat bibendum.</div>
           <div class="project-icons">
-            <ul>
-              <li><img class="project-icon" src="icons/favorite.svg"></li>
-              <li><img class="project-icon" src="icons/look.svg"></li>
-              <li><img class="project-icon" src="icons/branch.svg"></li>
+            <img class="project-icon" src="icons/favorite.svg">
+            <img class="project-icon" src="icons/look.svg">
+            <img class="project-icon" src="icons/branch.svg">
           </div>
         </div>
 
@@ -102,10 +102,9 @@
           <div class="project-tittle">Impossible App</div>
           <div class="project-description">Per sapien habitant est erat tellus augue et in risus cras, fermentum leo facilisis inceptos potenti duis torquent placerat conubia.</div>
           <div class="project-icons">
-            <ul>
-              <li><img class="project-icon" src="icons/favorite.svg"></li>
-              <li><img class="project-icon" src="icons/look.svg"></li>
-              <li><img class="project-icon" src="icons/branch.svg"></li>
+            <img class="project-icon" src="icons/favorite.svg">
+            <img class="project-icon" src="icons/look.svg">
+            <img class="project-icon" src="icons/branch.svg">
           </div>
         </div>
 
@@ -113,10 +112,9 @@
           <div class="project-tittle">Easy Peasy App</div>
           <div class="project-description">Lorem ipsum dolor sit amet consectetur adipiscing elit, elementum cum morbi augue fringilla congue, vulputate curabitur leo iaculis dapibus scelerisque.</div>
           <div class="project-icons">
-            <ul>
-              <li><img class="project-icon" src="icons/favorite.svg"></li>
-              <li><img class="project-icon" src="icons/look.svg"></li>
-              <li><img class="project-icon" src="icons/branch.svg"></li>
+            <img class="project-icon" src="icons/favorite.svg">
+            <img class="project-icon" src="icons/look.svg">
+            <img class="project-icon" src="icons/branch.svg">
           </div>
         </div>
 
@@ -124,10 +122,9 @@
           <div class="project-tittle">Ad Blocker</div>
           <div class="project-description">Et dolore consequatur eos culpa dolorem est voluptas excepturi. Aut temporibus expedita qui dolores sint sit dicta rerum non eveniet voluptatum et dolor eveniet ad rerum delectus.</div>
           <div class="project-icons">
-            <ul>
-              <li><img class="project-icon" src="icons/favorite.svg"></li>
-              <li><img class="project-icon" src="icons/look.svg"></li>
-              <li><img class="project-icon" src="icons/branch.svg"></li>
+            <img class="project-icon" src="icons/favorite.svg">
+            <img class="project-icon" src="icons/look.svg">
+            <img class="project-icon" src="icons/branch.svg">
           </div>
         </div>
 
@@ -135,16 +132,17 @@
           <div class="project-tittle">Money Maker</div>
           <div class="project-description">Ut voluptatem dolores et totam voluptatem qui tempora nemo ut alias incidunt et architecto quia ea accusantium voluptas.</div>
           <div class="project-icons">
-            <ul>
-              <li><img class="project-icon" src="icons/favorite.svg"></li>
-              <li><img class="project-icon" src="icons/look.svg"></li>
-              <li><img class="project-icon" src="icons/branch.svg"></li>
+            <img class="project-icon" src="icons/favorite.svg">
+            <img class="project-icon" src="icons/look.svg">
+            <img class="project-icon" src="icons/branch.svg">
           </div>
         </div>
 
       </div>
 
+
       <div class="announcements">
+        <h3>Announcements</h3>
 
         <div class="announcement">
           <div class="announcement-tittle">Site Maintenance</div>
@@ -164,10 +162,11 @@
       </div>
 
       <div class="trending-accounts">
+        <h3>Trending</h3>
 
         <div class="account">
           <img class= "profile-pic" src="./images/tegan.jpg" alt="Profile picture">
-          <div class="message">
+          <div class="account-info">
             <p class="account-address">@tegan</p>
             <p class="account-text">World Peace Builder</p>
           </div>
@@ -175,7 +174,7 @@
 
         <div class="account">
           <img class= "profile-pic" src="./images/morgan.jpg" alt="Profile picture">
-          <div class="message">
+          <div class="account-info">
             <p class="account-address">@morgan</p>
             <p class="account-text">Super Cool Project</p>
           </div>
@@ -183,7 +182,7 @@
 
         <div class="account">
           <img class= "profile-pic" src="./images/kendall.jpg" alt="Profile picture">
-          <div class="message">
+          <div class="account-info">
             <p class="account-address">@kendall</p>
             <p class="account-text">Life changing App</p>
           </div>
@@ -191,7 +190,7 @@
 
         <div class="account">
           <img class= "profile-pic" src="./images/alex.jpg" alt="Profile picture">
-          <div class="message">
+          <div class="account-info">
             <p class="account-address">@alex</p>
             <p class="account-text">No Traffic Maker</p>
           </div>
