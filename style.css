@@ -1,0 +1,269 @@
+img {
+  height: 50px;
+  width: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/*//// HEADER ////*/
+
+.header {
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 10px;
+}
+
+/*//// SEARCH BAR ////*/
+
+.search {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#search-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#search-icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+/*//// NOTIICATION + USER INFO ////*/
+
+.user-info {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#notification-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+/*//// WELCOME MESSAGE ////*/
+
+.welcome-message {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.big-profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+.salutation {
+  font-size: 18px;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/*//// OPTION BUTTONS ////*/
+
+.buttons {
+  grid-column: 3;
+  grid-row: 2;
+  display: flex;
+  gap: 10px;
+}
+
+.option-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*//// SIDEBAR ////*/
+
+.sidebar {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto; /* Divide la sidebar en tres filas: logo, parte superior, contenido principal y parte inferior. */
+  gap: 10px;
+  background-color: #49aafa; 
+  padding: 20px;
+  color: white; 
+  width: 250px;
+  grid-column: 1; 
+  grid-row: 1 / 4; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-icon,
+.dashboard-icon {
+  filter: brightness(0) invert(1); /* Invierte el color de los icono a blanco. */
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+
+.logo ul,
+.sidebar-top ul,
+.sidebar-bottom ul,
+.project-icons ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/*//// MAIN CONTENT ////*/
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-template-rows: repeat(3, auto);
+
+  /*grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-template-rows: repeat(3, 70px);*/
+  gap: 20px;
+  padding: 20px;
+}
+
+/*//// PROJECTS ////*/
+
+.projects {
+  grid-column: span 2; 
+  grid-row: span 3; 
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+}
+
+.project {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: grid;
+
+}
+
+.projects h3 {
+  grid-column: 1/ -1;
+}
+
+.project-icons {
+  display: flex; 
+  align-items:start;
+  justify-content: flex-end;
+  gap: 10px; 
+}
+
+.project-icon {
+  width: 24px; 
+  height: 24px;
+}
+
+
+/*//// ANNOUNCEMENTS ////*/
+
+.announcements {
+  grid-column: 3 / 4;
+}
+
+.announcement {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: grid;
+}
+
+.announcements h3 {
+  grid-column: 1 / -1;
+}
+
+.announcement-tittle {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+/*//// TRENDING ACCOUNTS ////*/
+
+.trending-accounts {
+  grid-column: 3 / 4;
+}
+
+.account {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: grid;
+ 
+
+}
+
+.profile-pic {     /* está arriba también */
+}
+
+.account-info {
+}
+
+.account-address {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.account-text {
+}
+
+/*//// FOOTER ////*/
+
+.footer {
+}
+
+.name {
+}
+
+.icon {
+}
